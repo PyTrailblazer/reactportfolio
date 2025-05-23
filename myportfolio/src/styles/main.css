@@ -1,20 +1,24 @@
 @import './reset.css';
 @import './fonts.css';
 
+/* Светлая тема */
 :root {
-    --background-color: #ffffff;
-    --text-color: #000000;
-    --primary-color: #007bff;
-  }
-  
-  [data-theme="dark"] {
-    --background-color: #121212;
-    --text-color: #ffffff;
-    --primary-color: #bb86fc;
-  }
-  
-  body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --accent-color: #007bff;
+}
+
+/* Тёмная тема */
+.dark {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --accent-color: #66aaff;
+}
+
+/* Глобальные стили */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'SourceSans3', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

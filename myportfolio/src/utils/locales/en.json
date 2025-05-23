@@ -4,5 +4,7 @@
     "nav.about": "About me",
     "nav.stack": "My Stack",
     "nav.work": "My Work",
-    "nav.contact": "Contact"   
+    "nav.contact": "Contact",
+    
+    "header.title": "Hello, I'm"
 }

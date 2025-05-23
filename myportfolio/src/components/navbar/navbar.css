@@ -1,0 +1,87 @@
+/* Общая обёртка навигации */
+.nav {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border-bottom: 1px solid #e5e7eb; 
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Контейнер — ограничивает ширину и выравнивает контент */
+.nav__container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav__menu-list {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav__menu-link {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.nav__language-divider {
+  margin: 0 8px;
+  color: #ccc;
+  font-weight: 500;
+}
+
+.nav__theme-toggle {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.dark .nav__logo img {
+  filter: invert(100%);
+}
+
+@media (max-width: 1023px) {
+  .nav__container {
+    padding: 0 0.5rem;
+  }
+
+  .nav__menu-list {
+    gap: 1.2rem;
+  }
+
+  .nav__menu-link {
+    font-size: 16px;
+  }
+
+  .nav__theme-toggle {
+    margin-left: 0.5rem;
+  }
+
+  .nav__language-switcher {
+    gap: 4px;
+  }
+
+  .nav__language-button {
+    font-size: 14px;
+  }
+
+  .logo__image {
+    width: 80px;
+    height: auto;
+  }
+}
+
+
+
+
+

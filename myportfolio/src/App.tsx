@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import Navbar from './components/navbar/Navbar'
 
 import "./styles/main.css"
+import Header from './components/header/Header'
 
 function App() {
   const { t, i18n } = useTranslation()
@@ -19,8 +20,9 @@ function App() {
   }
 
   return (
-    <div className='App'>
+    <div className="App">
       <Navbar />
+      {/* <Header /> */}
     </div>
   )
 }

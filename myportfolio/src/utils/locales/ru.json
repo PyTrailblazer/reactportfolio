@@ -4,5 +4,7 @@
     "nav.about": "Обо мне",
     "nav.stack": "Мой стек",
     "nav.work": "Мои работы",
-    "nav.contact": "Связаться со мной"  
+    "nav.contact": "Связаться со мной",
+    
+    "header.title": "Привет, я"
 }

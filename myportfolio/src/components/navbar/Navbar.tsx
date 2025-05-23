@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { useTranslation } from 'react-i18next'
-import "./style.css"
+import './navbar.css'
 import { assets } from '../../assets/img/assets'
-import ThemeToggle from "../themetoggle/ThemeToggle"
+import ThemeToggle from '../theme_toggle/ThemeToggle'
 
 const Navbar = () => {
   const { t, i18n } = useTranslation()
@@ -12,22 +12,6 @@ const Navbar = () => {
       i18n.changeLanguage(lng)
     }
   }
-
-  const [theme, setTheme] = useState<'light' | 'dark'>('light')
-
-  useEffect(() => {
-    const currentTheme = document.body.getAttribute("data-theme") as 'light' | 'dark'
-    setTheme(currentTheme || 'light')
-
-    const observer = new MutationObserver(() => {
-      const newTheme = document.body.getAttribute("data-theme") as 'light' | 'dark'
-      setTheme(newTheme || 'light')
-    })
-
-    observer.observe(document.body, { attributes: true, attributeFilter: ['data-theme'] })
-
-    return () => observer.disconnect()
-  }, [])
 
   return (
     <nav className="nav">
@@ -40,7 +24,7 @@ const Navbar = () => {
           title="Home"
         >
           <img
-            src={theme === 'dark' ? assets.logo_dark : assets.logo}
+            src={assets.logo}
             alt="logo"
             className="logo__image"
             width="90" height="25"
@@ -67,7 +51,9 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="nav__overlay">
+        
+
+        <div className="nav__theme-toggle">
           <ThemeToggle />
         </div>
 
