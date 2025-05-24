@@ -2,9 +2,12 @@
     "title_main": "Портфолио",
     "nav.home": "Главная",
     "nav.about": "Обо мне",
-    "nav.stack": "Мой стек",
-    "nav.work": "Мои работы",
+    "nav.stack": "Стек",
+    "nav.work": "Проекты",
     "nav.contact": "Связаться со мной",
     
-    "header.title": "Привет, я"
+    "header.caption": "Привет! Меня зовут Сергей Булат",
+    "header.title": "Я frontend разработчик", 
+    "header.subtitle": "Превращаю идеи в цифровые продукты, которые покоряют пользователей",
+    "resume.button": "Моё Резюме"
 }

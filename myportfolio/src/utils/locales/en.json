@@ -6,5 +6,8 @@
     "nav.work": "My Work",
     "nav.contact": "Contact",
     
-    "header.title": "Hello, I'm"
+    "header.caption": "Hi! My name is Serghei Bulat",
+    "header.title": "I'm a frontend developer",
+    "header.subtitle": "I turn ideas into pixel-perfect digital experiences that users love",
+    "resume.button": "My Resume"
 }

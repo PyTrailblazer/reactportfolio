@@ -14,6 +14,7 @@ import project_icon_dark from './project-icon-dark.png';
 import project_icon from './project-icon.png';
 import sun from './sun.svg';
 import user_about from './user-about.png';
+import download_icon from './download-icon.png';
 
 export const assets = {
   code_icon_dark,
@@ -32,4 +33,5 @@ export const assets = {
   project_icon,
   sun,
   user_about,
+  download_icon,
 };
